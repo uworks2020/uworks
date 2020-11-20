@@ -82,15 +82,15 @@
 
     <?php } else if ($content->nama == 'Testimoni') { ?>
         <div id="testimoni" data-aos="fade-up">
-            <div class="testimonials-clean home-bg-dark">
-                <div class="container">
+            <div class="testimonials-clean home-bg-dark ">
+                <div class="container " >
                     <div class="intro">
                         <h2 data-aos="fade-up" class="text-center"><?= $content->nama ?> </h2>
                         <div class="text-center">
                             <?= $content->isi ?>
                         </div>
                     </div>
-                    <div class="row people">
+                    <div class="row people d-flex justify-content-center">
 
                         <?php $delay = 0;
                         foreach ($testimoni as $testimoni) { ?>
@@ -114,7 +114,7 @@
                     <div class="intro">
                         <h2 data-aos="fade-up" class="text-center">Portofolio</h2>
                     </div>
-                    <div class="row photos">
+                    <div class="row photos d-flex justify-content-center">
                         <?php $cdelay = 0;
                         foreach ($client as $clientz) { ?>
                             <div data-aos="fade-up" data-aos-delay="<?= $cdelay ?>" class="col-sm-6 col-md-4 col-lg-3 item text-center">
