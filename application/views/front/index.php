@@ -54,7 +54,7 @@
                             <?= $content->isi ?>
                         </div>
                     </div>
-                    <div class="row people">
+                    <div class="row people justify-content-center">
 
                         <?php $delay = 50;
                         foreach ($team as $team) { ?>
