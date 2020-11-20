@@ -83,7 +83,7 @@ $site = $this->site_model->listing();
     }
     ?>
 
-    <div id="contact">
+    <div id="contact" style="overflow-x: hidden;">
         <div class="block-pad">
             <div class="container">
                 <div class="row pt-5 pb-5">

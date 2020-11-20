@@ -1,4 +1,4 @@
-<div class="block-pad">
+<div class="block-pad" style="overflow-x: hidden;">
     <div class="container">
         <div class="row pt-5 pb-5">
             <div class="col-md-6 d-xl-flex align-items-xl-center">
@@ -122,7 +122,8 @@
                                     <!-- <a data-lightbox="photos" href="<?= base_url('assets/img/upload/client/' . $clientz->gambar) ?>"> -->
                                     <img class="img-fluid m-2" src="<?= base_url('assets/img/upload/client/thumbs/' . $clientz->gambar) ?>">
 
-                                </a><?= $clientz->lembaga ?>
+                                </a>
+                                <p><?= $clientz->lembaga ?></p>
                             </div>
                         <?php $cdelay = $cdelay + 50;
                         } ?>
