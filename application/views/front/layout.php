@@ -7,8 +7,12 @@ $site = $this->site_model->listing();
 <html>
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="title" content="U-Works!" >
+    <meta name="description" content="U-Works adalah jasa yang bergerak dibidang start-up yang menyediakan pelayanan pembuatan website, sosial media dan advertising">
+
     <title><?= $title ?></title>
     <link rel="icon" href="<?= base_url('assets/img/upload/config/' . $site->icon) ?>" type="image/png">
     <link rel="stylesheet" href="<?= base_url('assets/front') ?>/bootstrap/css/bootstrap.min.css">
