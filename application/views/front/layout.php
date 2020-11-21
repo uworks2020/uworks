@@ -12,6 +12,7 @@ $site = $this->site_model->listing();
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="title" content="U-Works!" >
     <meta name="description" content="U-Works adalah jasa yang bergerak dibidang start-up yang menyediakan pelayanan pembuatan website, sosial media dan advertising">
+    <meta name="keyword" content="u-works!, u-works, uworks!, uworks, uwork, u-work, palembang, jasa, pembuatan, website, sosial media, laporan akhir, mahasiswa, pemrograman, sistem informasi, manajemen informatika, universitas sriwijaya, politeknik sriwijaya">
 
     <title><?= $title ?></title>
     <link rel="icon" href="<?= base_url('assets/img/upload/config/' . $site->icon) ?>" type="image/png">
