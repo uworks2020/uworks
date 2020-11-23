@@ -1,3 +1,4 @@
+
 <div class="block-pad" style="overflow-x: hidden;">
     <div class="container">
         <div class="row pt-5 pb-5">
@@ -15,7 +16,7 @@
 <?php foreach ($content as $content) { ?>
 
     <?php if ($content->nama == 'Services') { ?>
-
+        <div class="anchor" id="services"></div>
         <div data-aos="fade-up" id="services">
             <div class="features-boxed home-bg-dark">
                 <div class="container">
@@ -45,7 +46,8 @@
         </div>
 
     <?php } else if ($content->nama == 'Team') { ?>
-        <div id="team" data-aos="fade-up">
+        <div class="anchor" id="team"></div>
+        <div data-aos="fade-up">
             <div class="team-grid">
                 <div class="container">
                     <div class="intro">
@@ -81,7 +83,8 @@
         </div>
 
     <?php } else if ($content->nama == 'Testimoni') { ?>
-        <div id="testimoni" data-aos="fade-up">
+        <div class="anchor" id="testimoni"></div>
+        <div data-aos="fade-up">
             <div class="testimonials-clean home-bg-dark ">
                 <div class="container " >
                     <div class="intro">

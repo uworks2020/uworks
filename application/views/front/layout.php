@@ -87,8 +87,8 @@ $site = $this->site_model->listing();
         $this->load->view($isi);
     }
     ?>
-
-    <div id="contact" style="overflow-x: hidden;">
+<div class="anchor" id="contact"></div>
+    <div  style="overflow-x: hidden;">
         <div class="block-pad">
             <div class="container">
                 <div class="row pt-5 pb-5">
