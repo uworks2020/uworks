@@ -42,6 +42,14 @@ class team_model extends CI_Model {
         
     }
 
+    public function get_data_login($email)
+    {
+        $this->db->where('email', $email);
+        return $this->db->get('team')->row();
+        
+        
+    }
+
 }
 
 /* End of file team_model.php */
