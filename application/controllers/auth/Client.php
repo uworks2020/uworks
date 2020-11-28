@@ -47,7 +47,7 @@ class client extends CI_Controller
             if ($this->form_validation->run() == FALSE) {
                 $data = [
                     'respond'   => 'error',
-                    'message'   => validation_errors()
+                    'message'   => 'Lengkapi form!'
                 ];
             } else {
                 $post = $this->input->post();
@@ -124,7 +124,7 @@ class client extends CI_Controller
             if ($this->form_validation->run() == FALSE) {
                 $data = [
                     'respond'   => 'error',
-                    'message'   => validation_errors()
+                    'message'   => 'Lengkapi form!'
                 ];
             } else {
 
