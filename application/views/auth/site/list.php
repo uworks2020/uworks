@@ -117,6 +117,15 @@
                 'error'
             );
         } else {
+            Swal.fire({
+                title: 'Please Wait !',
+                html: 'Data Uploading',
+                showConfirmButton: false,
+                allowOutsideClick: false,
+                onBeforeOpen: () => {
+                    Swal.showLoading()
+                },
+            });
             $.ajax({
                 url: base_url + 'auth/upload/logo',
                 type: 'post',
@@ -157,6 +166,15 @@
                 'error'
             );
         } else {
+            Swal.fire({
+                title: 'Please Wait !',
+                html: 'Data Uploading',
+                showConfirmButton: false,
+                allowOutsideClick: false,
+                onBeforeOpen: () => {
+                    Swal.showLoading()
+                },
+            });
             $.ajax({
                 url: base_url + 'auth/upload/icon',
                 type: 'post',
