@@ -4,7 +4,7 @@
             <?php foreach ($gambar as $gambar) { ?>
                 <div class="col-lg-3 col-md-4 col-sm-6 mb-2">
                     <div class="card">
-                        
+
                         <img class="card-img-top" src="<?= base_url('assets/img/upload/client/thumbs/cropped/' . $gambar->file) ?>" alt="Card image cap">
                         <div class="card-body text-center">
                             <div class="btn-group">
@@ -31,7 +31,6 @@
 </form>
 
 <script>
-
     $(".custom-file-input").on("change", function() {
         var fileName = $(this).val().split("\\").pop();
         $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
@@ -131,6 +130,15 @@
         let id = '<?= $client->id ?>';
         let id_client = '<?= $client->id ?>';
 
+        Swal.fire({
+            title: 'Please Wait !',
+            html: 'Data ploading',
+            showConfirmButton: false,
+            allowOutsideClick: false,
+            onBeforeOpen: () => {
+                Swal.showLoading()
+            },
+        });
         $.ajax({
             url: base_url + 'auth/upload/gambarclient/' + id,
             type: 'post',

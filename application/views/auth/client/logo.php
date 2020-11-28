@@ -22,6 +22,15 @@
 
         let id = '<?= $client->id ?>';
 
+        Swal.fire({
+            title: 'Please Wait !',
+            html: 'Data ploading',
+            showConfirmButton: false,
+            allowOutsideClick: false,
+            onBeforeOpen: () => {
+                Swal.showLoading()
+            },
+        });
         $.ajax({
             url: base_url + 'auth/upload/logoclient/' + id,
             type: 'post',

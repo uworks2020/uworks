@@ -39,6 +39,15 @@
                 'error'
             );
         } else {
+            Swal.fire({
+                title: 'Please Wait !',
+                html: 'Data ploading',
+                showConfirmButton: false,
+                allowOutsideClick: false,
+                onBeforeOpen: () => {
+                    Swal.showLoading()
+                },
+            });
             $.ajax({
                 url: base_url + 'auth/upload/content/' + id,
                 type: 'post',
