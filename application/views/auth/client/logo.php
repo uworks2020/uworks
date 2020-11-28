@@ -24,7 +24,7 @@
 
         Swal.fire({
             title: 'Please Wait !',
-            html: 'Data ploading',
+            html: 'Data Uploading',
             showConfirmButton: false,
             allowOutsideClick: false,
             onBeforeOpen: () => {
