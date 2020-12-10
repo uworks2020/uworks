@@ -74,7 +74,10 @@ class client extends CI_Controller
             $id = $this->input->post('id');
             $client = $this->client_model->get($id);
             $this->upload_config->hapus_file('client', $client->logo);
-            $this->upload_config->hapus_file('client', $client->gambar);
+            $gambar = $this->gambar_model->listing($id);
+            foreach ($gambar as $gambar) {
+                $this->upload_config->hapus_file('client', $gambar->file);
+            }
             $proses = $this->client_model->hapus($id);
             $proses_testimoni = $this->client_model->hapus_testimoni($id);
             if ($proses) {
